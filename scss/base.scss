@@ -1,0 +1,59 @@
+@import "colors.scss";
+
+html {
+    background: $white02;
+    margin-left: 1em;
+}
+
+h1 {
+    color: $red04;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+    color: $grey01;
+}
+
+h2 {
+    margin-top: 1em;
+    margin-bottom: 6px;
+}
+
+p {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    color: $grey01;
+    font-family: serif;
+}
+
+a {
+    text-decoration: none;
+
+    color: $blue07;
+    border-bottom: 1px solid $blue07;
+
+    transition: .5s;
+
+    &:hover {
+        color: $blue06;
+        border-color: $blue06; 
+    }
+
+    &:visited {
+        color: $purple01;
+        border-color: $purple01;
+    }
+
+    &:visited:hover {
+        color: $purple02;
+        border-color: $purple02;
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}

@@ -3,8 +3,8 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     webserver = require('gulp-webserver'),
     opn = require('opn'),
-    sourcemaps = require('gulp-sourcemaps'),
-    html5Lint = require('gulp-html5-lint');
+    sourcemaps = require('gulp-sourcemaps');
+    // html5Lint = require('gulp-html5-lint');
 
 var sourcePaths = {
     styles: ['scss/*.scss'],
@@ -29,10 +29,10 @@ gulp.task('scss', function() {
         .pipe(gulp.dest( distPaths.styles ));
 });
 
-gulp.task('html5-lint', function() {
-    return gulp.src('*.html')
-        .pipe(html5Lint());
-});
+// gulp.task('html5-lint', function() {
+//     return gulp.src('*.html')
+//         .pipe(html5Lint());
+// });
 
 gulp.task('webserver', function() {
   gulp.src( '.' )
@@ -49,12 +49,17 @@ gulp.task('openbrowser', function() {
 });
 
 gulp.task('watch', function() {
-    gulp.watch(distPaths.styles);
-    // gulp.watch(sourcePaths.styles, ['scss']);
+    // gulp.watch(distPaths.styles);
+    gulp.watch(sourcePaths.styles, ['scss']);
     gulp.watch(sourcePaths.scripts);
 });
 
 // gulp.task('build', ['scss']);
-gulp.task('default', ['watch', 'webserver', 'openbrowser']);
+gulp.task('default', [
+  'watch',
+  'webserver',
+  'openbrowser',
+  // 'html5-lint'
+]);
 
 
