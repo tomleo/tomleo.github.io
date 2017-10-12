@@ -1,12 +1,38 @@
 @import "colors.scss";
 
+:root {
+  font-size: calc(16px + 3vw);
+}
+
 html {
     background: $white02;
     margin-left: 1em;
+    font-size: 16px;
+    // font-size: 6vw;
+    // font-size: 6vmin;
+}
+
+@media only screen and (min-width: 800px) {
+    background: blue;
+    font-size: 16px;
+}
+
+body > div {
+    max-width: 800px;
 }
 
 h1 {
+    // font-size: 5.9vw;
+    // font-size: 15vw;
     color: $red04;
+}
+
+h2 {
+    // font-size: 3.0vh;
+}
+
+p, li, a {
+    // font-size: 2vmin;
 }
 
 h1, h2, h3, h4, h5, h6 {
