@@ -3,18 +3,21 @@
     <head>
         <meta charset="UTF-8">
         <title>Tom Leo</title>
-        <link rel="stylesheet" type="text/css" href="css/base.css">
+        <link rel="stylesheet" type="text/css" href="css/base.css" />
     </head>
     <body>
-        <h1 id="title">Website of Tom Leo</h1>
-        <h2 id="about">About</h2>
-        <p>Web Developer from Boston.</p>
-        <h2 id="links">Links</h2>
-        <ul>
-            <li><a href="http://tomleo.com">tomleo.com</a></li>
-            <li><a href="https://twitter.com/tomleo">twitter.com/tomleo</a></li>
-            <li><a href="http://blog.tomleo.com/">blog.tomleo.com</a></li>
-        </ul>
+        <div itemscope itemtype="http://schema.org/Person">
+            <h1 id="title" itemprop="name">Tom Leo</h1>
+            <meta itemprop="additionalName" content="Thomas Leo" />
+            <h2 id="about">About</h2>
+            <p><span itemprop="jobTitle">Web Developer</span> from Boston.</p>
+            <p>⠵, ❤ FLOSS</p>
+            <h2 id="links">Links</h2>
+            <ul>
+                <li><a href="http://tomleo.com">tomleo.com</a></li>
+                <li><a href="https://twitter.com/tomleo">twitter.com/tomleo</a></li>
+                <li><a href="http://blog.tomleo.com/">blog.tomleo.com</a></li>
+            </ul>
+        </div>
     </body>
 </html>
-
