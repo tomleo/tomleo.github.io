@@ -1,0 +1,43 @@
+html {
+  background: whitesmoke;
+  margin-left: 1em; }
+
+h1 {
+  color: lightcoral; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif; }
+
+h2, h3, h4, h5, h6 {
+  color: dimgray; }
+
+h2 {
+  margin-top: 1em;
+  margin-bottom: 6px; }
+
+p {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: dimgray;
+  font-family: serif; }
+
+a {
+  text-decoration: none;
+  color: midnightblue;
+  border-bottom: 1px solid midnightblue;
+  transition: .5s; }
+  a:hover {
+    color: navy;
+    border-color: navy; }
+  a:visited {
+    color: rebeccapurple;
+    border-color: rebeccapurple; }
+  a:visited:hover {
+    color: blueviolet;
+    border-color: blueviolet; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+/*# sourceMappingURL=base.css.map */
