@@ -1,0 +1,14 @@
+/* TEAM */
+Your title: Thomas Leo
+Site: tom@tomleo.com
+Twitter: https://twitter.com/tomleo
+Location: Massachusetts, United States.
+
+/* THANKS */
+Name: Everyone!
+                            
+/* SITE */
+Last update: 2017/10/13 
+Standards: HTML5, CSS3
+Software: VIM, GNU+Linux, Debian
+
