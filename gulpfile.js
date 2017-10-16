@@ -54,7 +54,9 @@ gulp.task('watch', function() {
     gulp.watch(sourcePaths.scripts);
 });
 
-// gulp.task('build', ['scss']);
+
+gulp.task('build', ['scss']);
+
 gulp.task('default', [
   'watch',
   'webserver',
