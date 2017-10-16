@@ -8,31 +8,10 @@ html {
     background: $white02;
     margin-left: 1em;
     font-size: 16px;
-    // font-size: 6vw;
-    // font-size: 6vmin;
-}
-
-@media only screen and (min-width: 800px) {
-    background: blue;
-    font-size: 16px;
-}
-
-body > div {
-    max-width: 800px;
 }
 
 h1 {
-    // font-size: 5.9vw;
-    // font-size: 15vw;
     color: $red04;
-}
-
-h2 {
-    // font-size: 3.0vh;
-}
-
-p, li, a {
-    // font-size: 2vmin;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -82,4 +61,65 @@ a {
 ul {
     margin: 0;
     padding: 0;
+
+    li {
+        a {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: normal;
+        }
+        min-height: 48px;
+    }
 }
+
+.page {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.main {
+    max-width: 800px;
+    flex: 1;
+}
+
+footer {
+    background: $white04;
+    margin-left: -1rem;
+    padding-left: 1rem;
+    padding-top: 6px;
+
+    p {
+        font-family: sans-serif;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 3.6em;
+    }
+
+    h2 {
+        font-size: 2.4em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    ul {
+        li {
+            a {
+                font-size: 1.5em;
+                min-height: 1em;
+                line-height: 1.5em;
+            }
+        }       
+    }
+}
+
