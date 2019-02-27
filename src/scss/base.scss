@@ -1,0 +1,125 @@
+@import "colors.scss";
+
+:root {
+  font-size: calc(16px + 3vw);
+}
+
+html {
+    background: $white02;
+    margin-left: 1em;
+    font-size: 16px;
+}
+
+h1 {
+    color: $red04;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+    color: $grey01;
+}
+
+h2 {
+    margin-top: 1em;
+    margin-bottom: 6px;
+}
+
+p {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    color: $grey01;
+    font-family: serif;
+}
+
+a {
+    text-decoration: none;
+
+    color: $blue07;
+    border-bottom: 1px solid $blue07;
+
+    transition: .5s;
+
+    &:hover {
+        color: $blue06;
+        border-color: $blue06; 
+    }
+
+    &:visited {
+        color: $purple01;
+        border-color: $purple01;
+    }
+
+    &:visited:hover {
+        color: $purple02;
+        border-color: $purple02;
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+        a {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: normal;
+        }
+        min-height: 48px;
+    }
+}
+
+.page {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.main {
+    max-width: 800px;
+    flex: 1;
+}
+
+footer {
+    background: $white04;
+    margin-left: -1rem;
+    padding-left: 1rem;
+    padding-top: 6px;
+
+    p {
+        font-family: sans-serif;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 3.6em;
+    }
+
+    h2 {
+        font-size: 2.4em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    ul {
+        li {
+            a {
+                font-size: 1.5em;
+                min-height: 1em;
+                line-height: 1.5em;
+            }
+        }       
+    }
+}
+

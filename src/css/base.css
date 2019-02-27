@@ -1,0 +1,85 @@
+:root {
+  font-size: calc(16px + 3vw); }
+
+html {
+  background: whitesmoke;
+  margin-left: 1em;
+  font-size: 16px; }
+
+h1 {
+  color: lightcoral; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif; }
+
+h2, h3, h4, h5, h6 {
+  color: dimgray; }
+
+h2 {
+  margin-top: 1em;
+  margin-bottom: 6px; }
+
+p {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: dimgray;
+  font-family: serif; }
+
+a {
+  text-decoration: none;
+  color: midnightblue;
+  border-bottom: 1px solid midnightblue;
+  transition: .5s; }
+  a:hover {
+    color: navy;
+    border-color: navy; }
+  a:visited {
+    color: rebeccapurple;
+    border-color: rebeccapurple; }
+  a:visited:hover {
+    color: blueviolet;
+    border-color: blueviolet; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    min-height: 48px; }
+    ul li a {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal; }
+
+.page {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+.main {
+  max-width: 800px;
+  flex: 1; }
+
+footer {
+  background: gainsboro;
+  margin-left: -1rem;
+  padding-left: 1rem;
+  padding-top: 6px; }
+  footer p {
+    font-family: sans-serif; }
+
+@media only screen and (min-width: 850px) {
+  body {
+    font-size: 16px; }
+  h1 {
+    font-size: 3.6em; }
+  h2 {
+    font-size: 2.4em; }
+  p {
+    font-size: 1.2em; }
+  ul li a {
+    font-size: 1.5em;
+    min-height: 1em;
+    line-height: 1.5em; } }
+
+/*# sourceMappingURL=base.css.map */
