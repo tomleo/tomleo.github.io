@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Ireland 2018</title>
+        <link rel="stylesheet" href="https://cdn.pannellum.org/2.4/pannellum.css">
+        <style>
+        #panorama {
+            height: 900px;
+            min-width: 600px;
+            min-height: 400px;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="panorama"></div>
+        <script src="https://cdn.pannellum.org/2.4/pannellum.js"></script>
+        <script>
+        pannellum.viewer('panorama', {
+            autoLoad: true,
+            autoRotate: 20,
+            compass: false,
+            panorama: "./PANO_20180522_151255.jpg"
+        });
+        </script>
+    </body>
+</html>
